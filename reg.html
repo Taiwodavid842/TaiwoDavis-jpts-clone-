@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <style>
+    body{
+    margin: 0px ;
+    padding-bottom: 60;
+    }
+    
+   header{
+   position:100%;
+   margin: 0px;
+   }
+    .dd {
+      position: relative;
+      display: inline-block;
+      border: none;
+    }
+    .dd-btn {
+      padding: 15px;
+      text-align: right;
+      
+      background-color:#912454;
+      border-bottom-color: black; 
+      border-top-color: #912454 ;
+      border-right-color: #912454;
+      border-left-color: #912454;
+      
+      width: 360px;
+      color: white;
+      position: relative;
+      margin-left: 0;
+      margin-top: 0px;
+      position: top;
+    }
+    span {
+      width: 7px;
+      margin-right: 6px;
+      font-size: 25px;
+      padding: 6px 10px 6px 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    .dd-content {
+      position: absolute;
+      width: 100%;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.0), 0 1px 1px rgba(0,0,0,0.0);
+      height: 0px;
+      transition: height s;
+      border: none;
+      overflow: hidden;
+      background-color: #912454; 
+      }
+     
+    
+    .dd.show .dd-content {
+      height: 230px;
+      border: none;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 6px;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      border-color pink;
+    }
+    a:hover{
+    color: white;
+    background: black;
+    }
+ 
+    .border{
+    margin-left: 10p;
+    padding-bottom: 50px;
+  }
+    figcaption{
+    
+    margin-left: 10px;
+    background: ;
+    width: 323px;
+    height: 1050px;
+    border: 1px solid   #912454;
+    border-right-color: #912454;
+    border-left-color: #912454;
+    border-top: none;
+    margin-button: 40px;
+    padding-bottom: 40px;
+    }
+    
+    #reg{
+    border: 1px solid #912454;
+    padding-right: 210px;
+    background: #912454;
+    margin-right: 0px;
+    color: white;
+    
+    font-size: 20px;
+    }
+   
+    #mySelect{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    width: 300px;
+    background: white;
+    font-size: 13px;
+    border-raduis: 3px;
+    }
+    h2{
+    margin-left: 20px;
+    }
+    #data{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    width: 300px;
+    background: white;
+    font-size: 13px;
+    }
+    button{
+    margin-left: 10px;
+   }
+    p{
+    margin-left: 10px;
+    }
+    .empty{
+    border: solid 1px black;
+    background: #e8e8e8;
+    border-color: #858585;
+    margin-left: 15px;
+    border-radius: 4px;
+    height: 35px;
+    width: 290px;
+    }
+    .div4{
+    background: #912454;
+    color: white;
+    border-color: black;
+    font-size: 20px;
+    }
+    </style>
+<body>
+  <header>
+  <div class="dd">
+    <button class="dd-btn" onclick="toggleDropdown()"><span> &#9776; </span></button>
+    <div class="dd-content" id="dropdownContent">
+       <img src="jpts.png" alt="" height="60px" width="50px" >
+      <a href="Home.html"><img src="homeicon.png" height="10px" width="14px"> Home </a>
+       <a href="forum.html"> <img src="megaphone.png" height="10px" width="14px">  studens forum </a>
+      <a href="reg.html"> <img src="pen.png" height="10px" width="14px">  registration </a>
+      <a href="E-book.html"> <img src="ebook.png" height="10px" width="14px">  E-book resources</a>
+      <a href="login.html"> <img src="login-.png" height="19px" width="16px"> login</a>
+    </div>
+  </div>
+  </header>
+ 
+    <div class="border">
+    <h2>Registration</h2>
+    <figcaption><span id="reg">registration</span><br><br>
+      <select id="mySelect">
+        <option value="" disabled selected hidden>select a program<sup>*</sup></option>
+     <option value="option1">select a program<sup>*</sup> </option>     
+        <option value="option1"> Online Topup</option>
+        <option value="option1"> professional certificate level 1</option>
+        <option value="option1">professional certificate level 4</option>
+        <option value="option1">   professional certificate leve 5  </option>
+      <option value="option1">   professional certificate leve 5  </option>
+      <option value="option1">   professional certificate level 6 </option>
+      
+      <option value="option1">   professional certificate leve 9 (phD supervision)  </option>
+      
+      <option value="option1">   professional certificate courses  </option>
+      
+        </select>
+      <br><br>
+      
+      <select id="mySelect">
+        <option value="" disabled selected hidden>select center<sup>*</sup>   </option>
+        <option value="option1">select center<sup>*</sup> </option>
+      
+       <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER):CENTARY CITY  </option>
+      
+       <option value="option1"> OFF AIRPORT ROAD ALONG KUJE ROAD At millitary checkpoint  Abuja- junior secondary school</option>
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+      
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+    
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+   
+    <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+   
+     <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+             
+             <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        
+        <option value="option1">ABIA STATE: Tenant road primary school by east Aba nigeria ( FULL TIME CENTER)</option>
+        
+        
+        
+        
+        
+        
+        
+        </select>
+        <br>
+        <br>
+        
+      <select id="mySelect">
+        <option value="" disabled selected hidden>select courses<sup>*</sup> </option>
+        <option value="option1"> select session<sup>*</sup>    </option>
+        
+      </select>
+      <br>
+      <br>
+      <select id="mySelect">
+        <option value="" disabled selected hidden>select session<sup>*</sup>  </option>
+        <option value="option1">select session<sup>*</sup></option>
+       <option value="option1"> 2023/2024</option>
+        <option value="option1"> 2022/2023</option>
+        <option value="option1"> 2020/2021</option>
+        
+        <option value="option1"> 2021/2022</option>
+        <option value="option1"> 2019/2020</option>
+        <option value="option1"> 2015/2016</option>
+        <option value="option1"> 2017/2018</option>
+        <option value="option1"> 2018/2019</option>
+        
+        <option value="option1"> 2016/2017</option>
+        
+      </select><br><br>
+      <input type="text" placeholder="surname" id="data"><br><br>
+     <input type="text" placeholder="other name" id="data"><br><br>
+     <input type="text" placeholder="email" id="data"><br><br>
+     <input type="text" placeholder="phone" id="data"><br><br>
+     <input type="text" placeholder="city" id="data"><br><br>
+     <select id="mySelect">
+        <option value="" disabled selected hidden>select highest qualification<sup>*</sup> </option>
+        <option value="option1">SSCE</option>
+        <option value="option1">BSC </option>
+        <option value="option1"> MBA</option>
+        <option value="option1"> MSE</option>
+        <option value="option1">PHD </option>
+        <option value="option1">OND </option>
+        <option value="option1">HND </option>
+        <option value="option1">NDE </option>
+        <option value="option1">NCE </option>
+        
+        </select><br><br>
+        <input type="name" placeholder="surname" id="data"><br><br>
+     <input type="pasdword" placeholder="password" id="data"><br><br>
+     <select id="mySelect">
+        <option value="" disabled selected hidden>how did you know about us?  </option>
+        <option value="option1"> word of mouth</option>
+        <option value="option1"> word of mouth</option>
+        <option value="option1"> Brochure</option>
+        <option value="option1"> Email mailshot</option>
+        <option value="option1"> online advert</option> 
+        <option value="option1"> word of mouth</option>
+        <option value="option1"> google</option>
+        <option value="option1"> yahoo</option>
+        <option value="option1"> Bing</option>
+        <option value="option1">  other search engine</option>
+        <option value="option1"> other</option>
+        
+        
+      </select>
+   
+    <p><b>upload credentials</b></p>
+    <button type="button" class="1st-btn">choose file</button> No file choosen<br>
+ <p><b>referrer</b></p>
+ <div class="empty"></div><br>
+    
+    <button type="button" class="div4"> Register</button>
+   
+     
+      </figcaption>
+    </div>
+    
+    
+    
+    <script>
+      function toggleDropdown() {
+      var dropdown = document.querySelector('.dd');
+      dropdown.classList.toggle('show');
+    }
+    </script>
+  </body>
+  </html>

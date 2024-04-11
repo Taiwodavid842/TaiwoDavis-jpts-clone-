@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+    margin: 0px;
+    }
+    
+   header{
+   position:100%;
+   margin: 0px;
+   }
+    .dd {
+      position: relative;
+      display: inline-block;
+      border: none;
+    }
+    .dd-btn {
+      padding: 15px;
+      text-align: right;
+      
+      background-color:#912454;
+      border-bottom-color: black; 
+      border-top-color: #912454 ;
+      border-right-color: #912454;
+      border-left-color: #912454;
+      
+      width: 360px;
+      color: white;
+      position: relative;
+      margin-left: 0;
+      margin-top: 0px;
+      position: top;
+    }
+    span {
+      width: 7px;
+      margin-right: 6px;
+      font-size: 25px;
+      padding: 6px 10px 6px 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    .dd-content {
+      position: absolute;
+      width: 100%;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.0), 0 1px 1px rgba(0,0,0,0.0);
+      height: 0px;
+      transition: height s;
+      border: none;
+      overflow: hidden;
+      background-color: #912454; 
+      }
+     
+    
+    .dd.show .dd-content {
+      height: 230px;
+      border: none;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 6px;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      border-color pink;
+    }
+    a:hover{
+    color: white;
+    background: black;
+    }
+  input[type="text"]{
+  display: inline;
+  height: 23px;
+  width: 120px;
+  border-radius: 5px;
+  margin-left: 55px;
+  padding-top: 0px;
+  }
+  input[type="password"]{
+  height: 23px;
+  width: 120px;
+  border-radius: 5px;
+  margin-left: 10px;
+  }
+  button{
+  background: #912454;
+  color: white;
+  margin-left: 86px;
+  font-size: 20px;
+  border-color: black;
+  border-radius: 5px;
+  
+  }
+  form{
+  padding-left: 10px;
+  }
+</style>
+</head>
+<body>
+  <header>
+  
+  <div class="dd">
+    <button class="dd-btn" onclick="toggleDropdown()"><span> &#9776; </span></button>
+    <div class="dd-content" id="dropdownContent">
+       <img src="jpts.png" alt="" height="60px" width="50px" >
+      <a href="Home.html"><img src="homeicon.png" height="10px" width="14px"> Home </a>
+       <a href="forum.html"> <img src="megaphone.png" height="10px" width="14px">  studens forum </a>
+      <a href="reg.html"> <img src="pen.png" height="10px" width="14px">  registration </a>
+      <a href="E-book.html"> <img src="ebook.png" height="10px" width="14px">  E-book resources</a>
+      <a href="login.html"> <img src="login-.png" height="19px" width="16px"> login</a>
+    </div>
+  </div>
+  </header>
+ 
+  <form>
+    <h2><b>forum</h2>
+   <label> <b> student<br> ID : </b></label>
+   <input type="text"><br><br>
+   <label><b>password</b></label></label> 
+   <input type="password"><br><br>
+   <button type="button">login</button>
+   <p>Or <span>Enter as guest</span></p>
+  </form>
+ <script>
+    function toggleDropdown() {
+      var dropdown = document.querySelector('.dd');
+      dropdown.classList.toggle('show');
+    }
+    </script>
+    </body>
+    </html>

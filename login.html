@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+  body{
+    margin: 0px ;
+    padding-bottom: 90px;
+    
+    }
+    
+   header{
+   position:100%;
+   margin: 0px;
+   }
+    .dd {
+      position: relative;
+      display: inline-block;
+      border: none;
+    }
+    .dd-btn {
+      padding: 15px;
+      text-align: right;
+      
+      background-color:#912454;
+      border-bottom-color: black; 
+      border-top-color: #912454 ;
+      border-right-color: #912454;
+      border-left-color: #912454;
+      
+      width: 360px;
+      color: white;
+      position: relative;
+      margin-left: 0;
+      margin-top: 0px;
+      position: top;
+    }
+    span {
+      width: 7px;
+      margin-right: 6px;
+      font-size: 25px;
+      padding: 6px 10px 6px 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    .dd-content {
+      position: absolute;
+      width: 100%;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.0), 0 1px 1px rgba(0,0,0,0.0);
+      height: 0px;
+      transition: height s;
+      border: none;
+      overflow: hidden;
+      background-color: #912454; 
+      }
+     
+    
+    .dd.show .dd-content {
+      height: 230px;
+      border: none;
+    }
+    .dd-content > a {
+      display: block;
+      padding: 6px;
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      border-color pink;
+    }
+    .login7{
+    padding-left: 20px;
+    }
+    h3{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 23px;
+    
+    
+    }
+   
+   input[type="text"]{
+   padding-top: 0px;
+   font-size: 22px;
+   border-radius: 4px;
+   border-color: #e8e8e8;
+   }
+   input[type="password"]{
+   padding-top: 0px;
+   font-size: 22px;
+   border-radius: 2px;
+   border-color: #e8e8e8;
+   }
+   .div22{
+   height: 40px;
+   width: 300px;
+   margin-left: 20px;
+   border-radius: 2px;
+   border-color: #e8e8e8 ;
+   color: white;
+   background: #912454;
+   }
+   p{
+   color: #912454;
+   padding-left: 17px;
+   }
+    </style>
+</head>
+<body>
+  <header>
+  <div class="dd">
+    <button class="dd-btn" onclick="toggleDropdown()"><span> &#9776; </span></button>
+    <div class="dd-content" id="dropdownContent">
+       <img src="jpts.png" alt="" height="60px" width="50px" >
+      <a href="Home.html"><img src="homeicon.png" height="10px" width="14px"> Home </a>
+       <a href="forum.html"> <img src="megaphone.png" height="10px" width="14px">  studens forum </a>
+      <a href="reg.html"> <img src="pen.png" height="10px" width="14px">  registration </a>
+      <a href="E-book.html"> <img src="ebook.png" height="10px" width="14px">  E-book resources</a>
+      <a href="login.html"> <img src="login-.png" height="19px" width="16px"> login</a>
+    </div>
+  </div>
+  </header>
+  <body>
+    <div class="login7"> 
+    <h3>LOGIN</h3>
+    <input type="text" id="id" placeholder="ID">
+    <input type="password" id="id" placeholder="password"><br>
+    <input type="radio" name="student">student<br>
+    <input type="radio" name="lecturer">lecturer<br>
+    <input type="radio" name="student">affiliate
+    </div><br>
+    
+  <button class="div22"> Login</button>
+    
+    <p>forgot password?</p>
+   
+    
+    
+    
+  </body>
+  <script>
+      function toggleDropdown() {
+      var dropdown = document.querySelector('.dd');
+      dropdown.classList.toggle('show');
+    }
+    </script>
+  </body>
+  </html>
