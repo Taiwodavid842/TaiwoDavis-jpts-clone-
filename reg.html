@@ -75,52 +75,59 @@
     }
  
     .border{
-    margin-left: 10p;
+    padding: ;
+    margin-left: 5px;
     padding-bottom: 50px;
   }
     figcaption{
     
     margin-left: 10px;
     background: ;
-    width: 323px;
-    height: 1050px;
-    border: 1px solid   #912454;
-    border-right-color: #912454;
-    border-left-color: #912454;
-    border-top: none;
+    width: 322px;
+    height: ;
+    border: 2px solid #912454;
+  //border-right-color: 1px solid #912454;
+// border-right-color: #912454;
+// border-top: none;
     margin-button: 40px;
     padding-bottom: 40px;
     }
     
     #reg{
+    margin-bottom: 10px;
+    margin-right: 90px;
     border: 1px solid #912454;
+    border-right-color: 1px solid #912454;
     padding-right: 210px;
     background: #912454;
-    margin-right: 0px;
+    margin-left: 0.2px;
     color: white;
-    
+    height: ;
+    width: 10%;
     font-size: 20px;
     }
    
     #mySelect{
-    margin-left: 15px;
+    margin-left: 17px;
     margin-right: 15px;
-    height: 40px;
-    width: 300px;
+    height: 10%;
+    width: 88%;
     background: white;
-    font-size: 13px;
-    border-raduis: 3px;
+    border-radius: 4px;
+    font-size: 15px;
+    border-raduis: ;
     }
     h2{
     margin-left: 20px;
     }
     #data{
-    margin-left: 15px;
+    margin-left: 17px;
     margin-right: 15px;
-    height: 40px;
-    width: 300px;
+    height: 10%;
+    width: 86%;
+    border-radius: 3px;
     background: white;
-    font-size: 13px;
+    font-size: 15px;
     }
     button{
     margin-left: 10px;
@@ -128,7 +135,7 @@
     p{
     margin-left: 10px;
     }
-    .empty{
+    #empty{
     border: solid 1px black;
     background: #e8e8e8;
     border-color: #858585;
@@ -142,6 +149,10 @@
     color: white;
     border-color: black;
     font-size: 20px;
+    margin-left: 20px;
+    }
+    {
+        
     }
     </style>
 <body>
@@ -158,13 +169,14 @@
     </div>
   </div>
   </header>
- 
+ <br>
     <div class="border">
-    <h2>Registration</h2>
-    <figcaption><span id="reg">registration</span><br><br>
+    <h2>REGISTRATION</h2>
+    
+    <figcaption><span id="reg" style="margin-left:0px;">registration</span><br><br>
       <select id="mySelect">
-        <option value="" disabled selected hidden>select a program<sup>*</sup></option>
-     <option value="option1">select a program<sup>*</sup> </option>     
+        <option value="" disabled selected hidden>select a program<sup></sup></option>
+     <option value="option1">select a program<sup></sup> </option>     
         <option value="option1"> Online Topup</option>
         <option value="option1"> professional certificate level 1</option>
         <option value="option1">professional certificate level 4</option>
@@ -246,10 +258,10 @@
         
       </select><br><br>
       <input type="text" placeholder="surname" id="data"><br><br>
-     <input type="text" placeholder="other name" id="data"><br><br>
-     <input type="text" placeholder="email" id="data"><br><br>
+     <input type="text" placeholder="other name" id="data" required><br><br>
+     <input type="email" placeholder="email" id="data"required><br><br>
      <input type="text" placeholder="phone" id="data"><br><br>
-     <input type="text" placeholder="city" id="data"><br><br>
+     <input type="text" placeholder="city" id="data" required><br><br>
      <select id="mySelect">
         <option value="" disabled selected hidden>select highest qualification<sup>*</sup> </option>
         <option value="option1">SSCE</option>
@@ -263,7 +275,7 @@
         <option value="option1">NCE </option>
         
         </select><br><br>
-        <input type="name" placeholder="surname" id="data"><br><br>
+        <input type="name" placeholder="surname" id="data" required><br><br>
      <input type="pasdword" placeholder="password" id="data"><br><br>
      <select id="mySelect">
         <option value="" disabled selected hidden>how did you know about us?  </option>
@@ -281,13 +293,13 @@
         
         
       </select>
-   
+   <br>
     <p><b>upload credentials</b></p>
-    <button type="button" class="1st-btn">choose file</button> No file choosen<br>
- <p><b>referrer</b></p>
- <div class="empty"></div><br>
-    
-    <button type="button" class="div4"> Register</button>
+    <input type="file" required style="margin-left: 20px;"><br><br>
+ <textarea id="empty" placeholder="referer" required></textarea>
+ <br>
+    <br>
+    <button type="button" class="div4">Register</button>
    
      
       </figcaption>
